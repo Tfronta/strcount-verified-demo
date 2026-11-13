@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "strcount"
+version = "0.1.0"
+description = "Count reads that carry a run of a short tandem repeat motif. A small program for testing STRhub Verified."
+requires-python = ">=3.8"
+
+[project.scripts]
+strcount = "strcount:main"
+
+[tool.setuptools]
+py-modules = ["strcount"]
